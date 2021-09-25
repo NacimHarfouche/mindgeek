@@ -1,0 +1,246 @@
+/* font */
+@import url('https://fonts.googleapis.com/css?family=Candal');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* Global */
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+html {
+	font-size: 62.5%;
+}
+body{
+
+}
+h1, h2, h3 {
+	font-family: "Candal";
+}
+p {
+	font-family: "Open Sans";
+	font-size: 1.6rem;
+}
+.fas {
+	color: #fb8b9b;
+}
+
+/* Entête de la page */
+header {
+	margin-top: 1rem;
+	width: 100%;
+}
+header nav {
+	padding: 7rem 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#navHeader a:hover {
+	transition: all 0.5s ease-out;
+	color: #fb8b9b;
+}
+#navHeader a:hover .fas {
+	transition: all 0.5s ease-out;
+	color: #224249;
+}
+header img {
+	width: 13rem;
+}
+header a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	font-family: "Candal";
+	font-size: 2.3rem;
+	color: #224249;
+}
+.inThisPage {
+	color: #fb8b9b;
+}
+.inThisPage .fas {
+	color: #224249;
+}
+header .fas {
+	font-size: 3rem;
+}
+header h1 {
+	font-size: 4.8rem;
+	text-align: center;
+	font-weight: normal;
+}
+header p {
+	font-size: 3.2rem;
+	text-align: center;
+	font-weight: bold;
+	line-height: 6rem;
+}
+#principalSection {
+	background: url("../img/background.jpg") no-repeat;
+	box-sizing: cover;
+	padding: 25rem 0;
+	color: white;
+}
+#principalSection div {
+	margin: auto;
+	width: 93%;
+}
+form {
+	padding: 3rem 0;
+	background-color: #fb8b9b;
+}
+form input {
+	border: none;
+	margin-left: 18rem;
+	background-color: #fb8b9b;
+	color: white;
+	font-size: 2rem;
+	width: 30rem;
+}
+form input::placeholder {
+	color: white;
+}
+/* Corps de la page */
+main {
+	margin: auto;
+	max-width: 80%;
+}
+main section {
+	width: 100%;
+}
+main h2 {
+	font-size: 2.88rem;
+}
+main h3 {
+	font-size: 1.92rem;
+}
+main section {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5rem;
+}
+main section h2 {
+	padding: 3.3rem 0;
+	border-top: dashed 1px black; 
+	border-left: dashed 1px black; 
+	border-right: dashed 1px black; 
+	text-align: center;
+	flex-basis: 100%;
+	color: #224249;
+}
+main section article {
+	flex: 1;
+	margin-top: 5rem;
+}
+main section article h3 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: #fb8b9b;
+	line-height: 8rem;
+}
+main article p {
+	line-height: 2.5rem;
+	color: #7b8291;
+}
+main .fas {
+	font-size: 5rem;
+}
+/* article offre */
+.offre {
+	border: dashed black 1px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+}
+.offre h3 {
+	background-color: #213e4e;
+	color: white;
+	width: 98%;
+}
+.offre p:nth-child(2) {
+	margin: 0;
+	font-size: 1.8rem;
+}
+.offre li {
+	list-style-type: circle;
+	line-height: 3rem;
+	font-weight: bold;
+	font-size: 1.4rem;
+	color: #7b8291;
+}
+.prix {
+	padding: 0 10rem;
+}
+.offre strong {
+	color: #666465;
+}
+.offre button {
+	width: 98%;
+	margin-bottom: 1rem;
+	padding: 1.5rem 0;
+	border: none;
+	background-color: #fb8b9b;
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 1.6rem;
+	color: white;
+}
+/* Pied de page */
+footer {
+	margin-top: 3rem;
+	background-color: #213e4e;
+	padding: 7rem 0;
+	color: white;
+}
+footer nav {
+	display: flex;
+	justify-content: space-around;
+}
+footer nav a {
+	font-family: "Candal";
+	font-size: 1.6rem;
+	text-decoration: none;
+	color: white;
+}
+footer a {
+	text-decoration: none;
+	color: white;
+}
+#licence {
+    display: block;
+    text-align: center;
+    padding: 25px;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+}
+
+#licence img {
+    width: 50px;
+}
+
+
+/* tablette */
+@media all And (max-width: 1024px) {
+	header nav {
+		flex-direction: column;
+		padding: 0;
+	}
+	header nav a {
+		padding: 3rem 0;
+	}
+	form input {
+	margin-left: 10rem;
+	}
+	main section {
+		flex-direction: column;
+	}
+	footer nav {
+		flex-direction: column;
+		align-items: center;
+	}
+	footer nav a {
+		padding: 2rem 0;
+	}
+}
